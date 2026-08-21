@@ -62,12 +62,14 @@ Busco constantemente evoluir tecnicamente, compreender os processos de negócio 
 
 <img
     height="180em"
-    src="https://github-readme-stats.vercel.app/api?username=KaiqueCh&show_icons=true&include_all_commits=true&count_private=true"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KaiqueCh&theme=github"
+    alt="Estatísticas do GitHub de Kaique Chaves"
 />
 
 <img
     height="180em"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=KaiqueCh&layout=compact"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=KaiqueCh&theme=github"
+    alt="Linguagens mais utilizadas por Kaique Chaves"
 />
 
 </div>
