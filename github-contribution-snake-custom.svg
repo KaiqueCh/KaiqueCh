@@ -60,7 +60,7 @@
   y="18"
   class="label"
 >
-  1005 contribuições no último ano
+  1045 contribuições no último ano
 </text>
 
 <!-- QUADRADOS -->
@@ -1952,7 +1952,7 @@
 
       <g>
         <title>
-          2026-02-28: 1 contribuições
+          2026-02-28: 2 contribuições
         </title>
 
         <rect
@@ -2061,7 +2061,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-1"
         >
           
         <animate
@@ -3451,7 +3451,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-1"
         >
           
         <animate
@@ -4075,7 +4075,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-1"
         >
           
         <animate
@@ -4518,7 +4518,7 @@
 
       <g>
         <title>
-          2026-07-15: 4 contribuições
+          2026-07-15: 7 contribuições
         </title>
 
         <rect
@@ -4546,7 +4546,7 @@
 
       <g>
         <title>
-          2026-07-16: 7 contribuições
+          2026-07-16: 14 contribuições
         </title>
 
         <rect
@@ -4555,7 +4555,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-3"
         >
           
         <animate
@@ -4574,7 +4574,7 @@
 
       <g>
         <title>
-          2026-07-17: 3 contribuições
+          2026-07-17: 6 contribuições
         </title>
 
         <rect
@@ -4638,7 +4638,7 @@
 
       <g>
         <title>
-          2026-07-20: 1 contribuições
+          2026-07-20: 2 contribuições
         </title>
 
         <rect
@@ -4666,7 +4666,7 @@
 
       <g>
         <title>
-          2026-07-21: 2 contribuições
+          2026-07-21: 4 contribuições
         </title>
 
         <rect
@@ -4675,7 +4675,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-1"
+          class="level-2"
         >
           
         <animate
@@ -4730,7 +4730,7 @@
 
       <g>
         <title>
-          2026-07-24: 1 contribuições
+          2026-07-24: 2 contribuições
         </title>
 
         <rect
@@ -4923,7 +4923,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-1"
         >
           
         <animate
@@ -5469,7 +5469,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-1"
         >
           
         <animate
@@ -6004,7 +6004,7 @@
 
       <g>
         <title>
-          2026-09-15: 1 contribuições
+          2026-09-15: 2 contribuições
         </title>
 
         <rect
@@ -6820,7 +6820,7 @@
 
       <g>
         <title>
-          2026-10-22: 12 contribuições
+          2026-10-22: 24 contribuições
         </title>
 
         <rect
@@ -6829,7 +6829,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-3"
+          class="level-4"
         >
           
         <animate
@@ -6848,7 +6848,7 @@
 
       <g>
         <title>
-          2026-10-23: 4 contribuições
+          2026-10-23: 8 contribuições
         </title>
 
         <rect
@@ -6857,7 +6857,7 @@
           width="10"
           height="10"
           rx="2.5"
-          class="level-2"
+          class="level-3"
         >
           
         <animate
@@ -6996,7 +6996,7 @@
 
       <g>
         <title>
-          2026-10-29: 3 contribuições
+          2026-10-29: 4 contribuições
         </title>
 
         <rect
@@ -7358,12 +7358,40 @@
 
       <g>
         <title>
-          2026-11-17: 0 contribuições
+          2026-11-17: 4 contribuições
         </title>
 
         <rect
           x="756"
           y="70"
+          width="10"
+          height="10"
+          rx="2.5"
+          class="level-2"
+        >
+          
+        <animate
+          attributeName="opacity"
+          values="1;0;1"
+          keyTimes="0;0.42703;1"
+          calcMode="discrete"
+          dur="22s"
+          begin="-1.4s"
+          repeatCount="indefinite"
+        />
+        
+        </rect>
+      </g>
+    
+
+      <g>
+        <title>
+          2026-11-18: 0 contribuições
+        </title>
+
+        <rect
+          x="756"
+          y="84"
           width="10"
           height="10"
           rx="2.5"
