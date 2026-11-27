@@ -56,26 +56,6 @@ Busco constantemente evoluir tecnicamente, compreender os processos de negócio 
 
 ---
 
-### 📊 GitHub
-
-<div align="center">
-
-<img
-    height="180em"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KaiqueCh&theme=github"
-    alt="Estatísticas do GitHub de Kaique Chaves"
-/>
-
-<img
-    height="180em"
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=KaiqueCh&theme=github"
-    alt="Linguagens mais utilizadas por Kaique Chaves"
-/>
-
-</div>
-
----
-
 ## 🐍 Contribuições
 
 <div align="center">

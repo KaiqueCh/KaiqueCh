@@ -12,33 +12,51 @@ if (!TOKEN) {
    CONFIGURAÇÃO VISUAL
 ========================================================= */
 
+// Grade
 const CELL = 10;
 const GAP = 4;
 const STEP = CELL + GAP;
-
 const OFFSET_X = 28;
-const OFFSET_Y = 42;
+const OFFSET_Y = 46;
 
-const DURATION = 22;
-
-// A animação já começa em movimento
-const ANIMATION_OFFSET = -1.4;
+// Tempo
+const DURATION = 24;      // ciclo completo, em segundos
+const MOVE_SHARE = 0.9;   // fração do ciclo com a cobra andando (o resto é pausa)
+const FADE = 0.004;       // tempo que o quadrado leva para sumir (fração do ciclo)
+const REFILL_AT = 0.965;  // momento em que os quadrados voltam
 
 // Cobra
-const SNAKE_COLOR = "#2EE6A6";
-const SNAKE_DARK = "#16B981";
+const SNAKE_HEAD = "#2EE6A6";
+const SNAKE_TAIL = "#0B7A5C";
+const TONGUE = "#FF4D78";
+const BODY_SEGMENTS = 28;
+const SEGMENT_SPACING = 3; // px entre segmentos (menor = corpo mais liso)
+const BODY_MAX_R = 5.2;
+const BODY_MIN_R = 2;
+const ENTRY = 120;         // px fora do gráfico para entrar e sair
 
-const HEAD_RADIUS = 8;
-const BODY_SEGMENTS = 14;
+// Cores dos quadrados (claro / escuro, iguais às do GitHub)
+const LIGHT = ["#EBEDF0", "#9BE9A8", "#40C463", "#30A14E", "#216E39"];
+const DARK = ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"];
 
-// Cores dos commits
-const COLORS = [
-  "#161B22",
-  "#0E4429",
-  "#006D32",
-  "#26A641",
-  "#39D353",
-];
+const MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+
+/* =========================================================
+   UTILITÁRIOS
+========================================================= */
+
+const hexToRgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+
+function mix(a, b, t) {
+  const ca = hexToRgb(a);
+  const cb = hexToRgb(b);
+  return (
+    "#" +
+    ca.map((v, i) => Math.round(v + (cb[i] - v) * t).toString(16).padStart(2, "0")).join("")
+  );
+}
+
+const f5 = (n) => n.toFixed(5);
 
 /* =========================================================
    BUSCA AS CONTRIBUIÇÕES REAIS DO GITHUB
@@ -65,26 +83,16 @@ query($login: String!) {
 
 const response = await fetch("https://api.github.com/graphql", {
   method: "POST",
-
   headers: {
     Authorization: `Bearer ${TOKEN}`,
     "Content-Type": "application/json",
     "User-Agent": "custom-contribution-snake",
   },
-
-  body: JSON.stringify({
-    query,
-    variables: {
-      login: USERNAME,
-    },
-  }),
+  body: JSON.stringify({ query, variables: { login: USERNAME } }),
 });
 
 if (!response.ok) {
-  console.error(
-    `Erro GitHub API: ${response.status} ${response.statusText}`
-  );
-
+  console.error(`Erro GitHub API: ${response.status} ${response.statusText}`);
   process.exit(1);
 }
 
@@ -95,8 +103,7 @@ if (result.errors) {
   process.exit(1);
 }
 
-const calendar =
-  result.data?.user?.contributionsCollection?.contributionCalendar;
+const calendar = result.data?.user?.contributionsCollection?.contributionCalendar;
 
 if (!calendar) {
   console.error("Não foi possível encontrar o calendário de contribuições.");
@@ -109,8 +116,10 @@ const totalContributions = calendar.totalContributions;
 const COLS = weeks.length;
 const ROWS = 7;
 
-const WIDTH = OFFSET_X * 2 + (COLS - 1) * STEP + CELL;
-const HEIGHT = OFFSET_Y + ROWS * STEP + 34;
+const GRID_W = (COLS - 1) * STEP + CELL;
+const GRID_H = (ROWS - 1) * STEP + CELL;
+const WIDTH = OFFSET_X * 2 + GRID_W;
+const HEIGHT = OFFSET_Y + GRID_H + 38;
 
 /* =========================================================
    ORGANIZA OS DIAS
@@ -122,13 +131,9 @@ weeks.forEach((week, weekIndex) => {
   week.contributionDays.forEach((day) => {
     days.push({
       ...day,
-
       x: OFFSET_X + weekIndex * STEP,
-
       y: OFFSET_Y + day.weekday * STEP,
-
       column: weekIndex,
-
       row: day.weekday,
     });
   });
@@ -143,16 +148,13 @@ const positiveCounts = days
   .map((day) => day.contributionCount)
   .sort((a, b) => a - b);
 
-function percentile(array, percentileValue) {
+function percentile(array, p) {
   if (!array.length) return 0;
-
-  const index = Math.floor((array.length - 1) * percentileValue);
-
-  return array[index];
+  return array[Math.floor((array.length - 1) * p)];
 }
 
 const Q1 = percentile(positiveCounts, 0.25);
-const Q2 = percentile(positiveCounts, 0.50);
+const Q2 = percentile(positiveCounts, 0.5);
 const Q3 = percentile(positiveCounts, 0.75);
 
 function contributionLevel(count) {
@@ -160,381 +162,240 @@ function contributionLevel(count) {
   if (count <= Q1) return 1;
   if (count <= Q2) return 2;
   if (count <= Q3) return 3;
-
   return 4;
 }
 
 /* =========================================================
-   CRIA O CAMINHO DA COBRA
+   CAMINHO DA COBRA
 
-   Ela percorre o gráfico em formato serpente:
-   
-   → → → → →
-             ↓
-   ← ← ← ← ←
-   ↓
-   → → → → →
+   Entra pela esquerda, percorre em serpente e sai:
+
+   ⟶ → → → → →
+               ↓
+     ← ← ← ← ←
+     ↓
+     → → → → → ⟶
 ========================================================= */
 
-const points = [];
+const center = (column, row) => ({
+  x: OFFSET_X + column * STEP + CELL / 2,
+  y: OFFSET_Y + row * STEP + CELL / 2,
+});
+
+const gridPoints = [];
 
 for (let row = 0; row < ROWS; row++) {
-  if (row % 2 === 0) {
-    for (let column = 0; column < COLS; column++) {
-      points.push({
-        column,
-        row,
-
-        x: OFFSET_X + column * STEP + CELL / 2,
-
-        y: OFFSET_Y + row * STEP + CELL / 2,
-      });
-    }
-  } else {
-    for (let column = COLS - 1; column >= 0; column--) {
-      points.push({
-        column,
-        row,
-
-        x: OFFSET_X + column * STEP + CELL / 2,
-
-        y: OFFSET_Y + row * STEP + CELL / 2,
-      });
-    }
+  for (let i = 0; i < COLS; i++) {
+    const column = row % 2 === 0 ? i : COLS - 1 - i;
+    gridPoints.push(center(column, row));
   }
 }
 
-const pathD = points
-  .map((point, index) => {
-    return `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`;
-  })
-  .join(" ");
+const first = gridPoints[0];
+const last = gridPoints[gridPoints.length - 1];
+const exitDir = (ROWS - 1) % 2 === 0 ? 1 : -1;
 
-/* =========================================================
-   DESCOBRE QUANDO A COBRA PASSA EM CADA BLOCO
-========================================================= */
+const trackPoints = [
+  { x: first.x - ENTRY, y: first.y },
+  ...gridPoints,
+  { x: last.x + exitDir * ENTRY, y: last.y },
+];
 
-const totalPositions = COLS * ROWS;
+const pathD = trackPoints.map((p, i) => `${i ? "L" : "M"}${p.x} ${p.y}`).join(" ");
+
+const PATH_LENGTH = ENTRY * 2 + (gridPoints.length - 1) * STEP;
+const SPEED = PATH_LENGTH / (DURATION * MOVE_SHARE); // px por segundo
+const SEGMENT_DELAY = SEGMENT_SPACING / SPEED;
+const LEAD = BODY_SEGMENTS * SEGMENT_DELAY;           // todos já começam em movimento
 
 function pathIndex(column, row) {
-  if (row % 2 === 0) {
-    return row * COLS + column;
-  }
-
-  return row * COLS + (COLS - 1 - column);
+  return row % 2 === 0 ? row * COLS + column : row * COLS + (COLS - 1 - column);
 }
 
-function progressForCell(column, row) {
-  return pathIndex(column, row) / Math.max(totalPositions - 1, 1);
+// Momento (fração do ciclo) em que a cabeça chega no quadrado
+function eatTime(column, row) {
+  const distance = ENTRY + pathIndex(column, row) * STEP - 4;
+  return (distance / PATH_LENGTH) * MOVE_SHARE;
 }
+
+const motion = (begin) => `
+    <animateMotion
+      dur="${DURATION}s"
+      begin="${begin.toFixed(3)}s"
+      repeatCount="indefinite"
+      rotate="auto"
+      calcMode="linear"
+      keyPoints="0;1;1"
+      keyTimes="0;${MOVE_SHARE};1"
+    ><mpath xlink:href="#snake-track"/></animateMotion>`;
 
 /* =========================================================
-   DESENHA OS QUADRADOS
+   QUADRADOS
 ========================================================= */
 
 const cellsSvg = days
   .map((day) => {
     const level = contributionLevel(day.contributionCount);
+    const box = `x="${day.x}" y="${day.y}" width="${CELL}" height="${CELL}" rx="2.5"`;
+    const empty = `<rect ${box} class="level-0"/>`;
 
-    const progress = progressForCell(day.column, day.row);
+    if (level === 0) return empty;
 
-    const safeProgress = Math.max(
-      0.0001,
-      Math.min(progress, 0.9999)
-    );
+    const eat = eatTime(day.column, day.row);
+    const gone = Math.min(eat + FADE, REFILL_AT - 0.001);
+    const label = day.contributionCount === 1 ? "contribuição" : "contribuições";
 
-    const animation =
-      day.contributionCount > 0
-        ? `
-        <animate
-          attributeName="opacity"
-          values="1;0;1"
-          keyTimes="0;${safeProgress.toFixed(5)};1"
-          calcMode="discrete"
-          dur="${DURATION}s"
-          begin="${ANIMATION_OFFSET}s"
-          repeatCount="indefinite"
-        />
-        `
-        : "";
-
-    return `
-      <g>
-        <title>
-          ${day.date}: ${day.contributionCount} contribuições
-        </title>
-
-        <rect
-          x="${day.x}"
-          y="${day.y}"
-          width="${CELL}"
-          height="${CELL}"
-          rx="2.5"
-          class="level-${level}"
-        >
-          ${animation}
-        </rect>
-      </g>
-    `;
+    return `${empty}
+<rect ${box} class="level-${level}">
+  <title>${day.date}: ${day.contributionCount} ${label}</title>
+  <animate attributeName="opacity" values="1;1;0;0;1"
+    keyTimes="0;${f5(eat)};${f5(gone)};${REFILL_AT};1"
+    dur="${DURATION}s" begin="${(-LEAD).toFixed(3)}s" repeatCount="indefinite"/>
+</rect>`;
   })
   .join("\n");
 
 /* =========================================================
-   CRIA CORPO DA COBRA
+   CORPO (cauda desenhada primeiro, cabeça por cima)
 ========================================================= */
 
-const bodySvg = Array.from(
-  {
-    length: BODY_SEGMENTS,
-  },
+const bodySvg = Array.from({ length: BODY_SEGMENTS }, (_, i) => {
+  const k = BODY_SEGMENTS - i;
+  const t = (k - 1) / (BODY_SEGMENTS - 1);
+  const r = BODY_MAX_R - t * (BODY_MAX_R - BODY_MIN_R);
 
-  (_, index) => {
-    const delay = index * 0.105;
-
-    const begin = ANIMATION_OFFSET + delay;
-
-    const size =
-      5.8 -
-      (index / Math.max(BODY_SEGMENTS - 1, 1)) * 2.4;
-
-    const opacity =
-      1 -
-      (index / Math.max(BODY_SEGMENTS - 1, 1)) * 0.48;
-
-    return `
-      <circle
-        cx="0"
-        cy="0"
-        r="${size.toFixed(2)}"
-        fill="${index < 5 ? SNAKE_COLOR : SNAKE_DARK}"
-        opacity="${opacity.toFixed(2)}"
-      >
-        <animateMotion
-          dur="${DURATION}s"
-          begin="${begin.toFixed(3)}s"
-          repeatCount="indefinite"
-          rotate="auto"
-          path="${pathD}"
-        />
-      </circle>
-    `;
-  }
-).join("\n");
+  return `<circle r="${r.toFixed(2)}" fill="${mix(SNAKE_HEAD, SNAKE_TAIL, t)}">${motion(
+    -LEAD + k * SEGMENT_DELAY
+  )}
+</circle>`;
+}).join("\n");
 
 /* =========================================================
    CABEÇA
-
-   Cabeça maior
-   Dois olhos
-   Pupilas
-   Boca abrindo/fechando
-   Língua
 ========================================================= */
 
 const headSvg = `
 <g>
+  <ellipse cx="1" cy="0" rx="7.2" ry="6" fill="${SNAKE_HEAD}"/>
 
-  <circle
-    cx="0"
-    cy="0"
-    r="${HEAD_RADIUS}"
-    fill="${SNAKE_COLOR}"
-  />
-
-  <!-- Olho superior -->
-
-  <circle
-    cx="2.2"
-    cy="-3.1"
-    r="2"
-    fill="#FFFFFF"
-  />
-
-  <circle
-    cx="3.1"
-    cy="-3.1"
-    r="0.9"
-    fill="#07130F"
-  />
-
-  <!-- Olho inferior -->
-
-  <circle
-    cx="2.2"
-    cy="3.1"
-    r="2"
-    fill="#FFFFFF"
-  />
-
-  <circle
-    cx="3.1"
-    cy="3.1"
-    r="0.9"
-    fill="#07130F"
-  />
-
-  <!-- Boca -->
-
-  <path
-    d="M 2 0 L 9 -4.5 L 9 4.5 Z"
-    fill="#0D1117"
-  >
-
-    <animateTransform
-      attributeName="transform"
-      type="scale"
-      values="
-        1 0.20;
-        1 1;
-        1 0.20
-      "
-      dur="0.32s"
-      repeatCount="indefinite"
-    />
-
-  </path>
+  <!-- Olhos -->
+  <circle cx="3" cy="-2.8" r="1.9" fill="#FFFFFF"/>
+  <circle cx="3.8" cy="-2.8" r="0.9" fill="#07130F"/>
+  <circle cx="3" cy="2.8" r="1.9" fill="#FFFFFF"/>
+  <circle cx="3.8" cy="2.8" r="0.9" fill="#07130F"/>
 
   <!-- Língua -->
+  <path d="M7.5 0 H12.5 M12.5 0 L15 -2 M12.5 0 L15 2"
+        stroke="${TONGUE}" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0"
+             keyTimes="0;0.5;0.6;0.85;1" dur="1.1s" repeatCount="indefinite"/>
+  </path>
+  ${motion(-LEAD)}
+</g>`;
 
-  <g>
+/* =========================================================
+   MESES E LEGENDA
+========================================================= */
 
-    <path
-      d="
-        M 7 0
-        L 13 0
-        M 13 0
-        L 16 -2
-        M 13 0
-        L 16 2
-      "
-      stroke="#FF4D78"
-      stroke-width="1.4"
-      stroke-linecap="round"
-      fill="none"
-    />
+const monthLabels = [];
+let prevMonth = -1;
+let lastLabelCol = -10;
 
-    <animate
-      attributeName="opacity"
-      values="0;1;0"
-      dur="0.75s"
-      repeatCount="indefinite"
-    />
+weeks.forEach((week, column) => {
+  const month = Number(week.contributionDays[0].date.slice(5, 7)) - 1;
+  if (month !== prevMonth) {
+    if (column - lastLabelCol >= 3) {
+      monthLabels.push(
+        `<text x="${OFFSET_X + column * STEP}" y="${OFFSET_Y - 8}" class="label small">${MONTHS[month]}</text>`
+      );
+      lastLabelCol = column;
+    }
+    prevMonth = month;
+  }
+});
 
-  </g>
+const legendY = OFFSET_Y + GRID_H + 14;
+const legendRight = OFFSET_X + GRID_W;
+const squaresStart = legendRight - 28 - 5 * STEP + GAP;
 
-  <animateMotion
-    dur="${DURATION}s"
-    begin="${ANIMATION_OFFSET}s"
-    repeatCount="indefinite"
-    rotate="auto"
-    path="${pathD}"
-  />
-
-</g>
-`;
+const legendSvg = `
+<text x="${squaresStart - 5}" y="${legendY + 9}" text-anchor="end" class="label small">Menos</text>
+${[0, 1, 2, 3, 4]
+  .map(
+    (lvl) =>
+      `<rect x="${squaresStart + lvl * STEP}" y="${legendY}" width="${CELL}" height="${CELL}" rx="2.5" class="level-${lvl}"/>`
+  )
+  .join("")}
+<text x="${legendRight}" y="${legendY + 9}" text-anchor="end" class="label small">Mais</text>`;
 
 /* =========================================================
    SVG FINAL
 ========================================================= */
 
+const levelCss = (palette) =>
+  palette.map((color, i) => `.level-${i} { fill: ${color}; }`).join("\n    ");
+
 const svg = `
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="${WIDTH}"
-  height="${HEIGHT}"
-  viewBox="0 0 ${WIDTH} ${HEIGHT}"
->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
 
 <style>
-
-  .level-0 {
-    fill: #EBEDF0;
-  }
-
-  .level-1 {
-    fill: ${COLORS[1]};
-  }
-
-  .level-2 {
-    fill: ${COLORS[2]};
-  }
-
-  .level-3 {
-    fill: ${COLORS[3]};
-  }
-
-  .level-4 {
-    fill: ${COLORS[4]};
-  }
-
-  .label {
-    font-family:
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      sans-serif;
-
-    font-size: 11px;
-
-    fill: #57606A;
-  }
-
-  @media (prefers-color-scheme: dark) {
-
-    .level-0 {
-      fill: #161B22;
-    }
+    ${levelCss(LIGHT)}
 
     .label {
-      fill: #8B949E;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      fill: #57606A;
     }
+    .small { font-size: 9px; }
+    .strong { font-weight: 600; fill: #1F2328; }
 
-  }
-
+    @media (prefers-color-scheme: dark) {
+    ${levelCss(DARK)}
+      .label { fill: #8B949E; }
+      .strong { fill: #E6EDF3; }
+    }
 </style>
 
-<!-- CONTADOR -->
+<defs>
+  <path id="snake-track" d="${pathD}" fill="none"/>
 
-<text
-  x="${OFFSET_X}"
-  y="18"
-  class="label"
->
-  ${totalContributions} contribuições no último ano
+  <clipPath id="grid-area">
+    <rect x="${OFFSET_X - 5}" y="${OFFSET_Y - 5}" width="${GRID_W + 10}" height="${GRID_H + 10}"/>
+  </clipPath>
+
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.8" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- CONTADOR -->
+<text x="${OFFSET_X}" y="20" class="label">
+  <tspan class="strong">${totalContributions.toLocaleString("pt-BR")}</tspan> contribuições no último ano
 </text>
 
+<!-- MESES -->
+${monthLabels.join("\n")}
+
 <!-- QUADRADOS -->
-
 <g id="contributions">
-
 ${cellsSvg}
-
 </g>
 
-<!-- TRAJETO INVISÍVEL -->
-
-<path
-  id="snake-track"
-  d="${pathD}"
-  fill="none"
-  stroke="transparent"
-/>
-
-<!-- CORPO -->
-
-<g id="snake-body">
-
+<!-- COBRA -->
+<g id="snake" clip-path="url(#grid-area)">
+  <g filter="url(#glow)">
 ${bodySvg}
-
-</g>
-
-<!-- CABEÇA -->
-
-<g id="snake-head">
-
 ${headSvg}
-
+  </g>
 </g>
+
+<!-- LEGENDA -->
+${legendSvg}
 
 </svg>
 `.trim();
@@ -543,24 +404,9 @@ ${headSvg}
    SALVA
 ========================================================= */
 
-await mkdir("dist", {
-  recursive: true,
-});
+await mkdir("dist", { recursive: true });
+await writeFile("dist/github-contribution-snake-custom.svg", svg, "utf8");
 
-await writeFile(
-  "dist/github-contribution-snake-custom.svg",
-  svg,
-  "utf8"
-);
-
-console.log(
-  `✓ Snake personalizada criada para @${USERNAME}`
-);
-
-console.log(
-  `✓ ${totalContributions} contribuições encontradas`
-);
-
-console.log(
-  "✓ dist/github-contribution-snake-custom.svg"
-);
+console.log(`✓ Snake personalizada criada para @${USERNAME}`);
+console.log(`✓ ${totalContributions} contribuições encontradas`);
+console.log("✓ dist/github-contribution-snake-custom.svg");
