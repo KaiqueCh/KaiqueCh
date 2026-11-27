@@ -28,24 +28,25 @@
 </style>
 
 <defs>
-  <path id="snake-track" d="M-87 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L881 135" fill="none"/>
+  <path id="snake-track" d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"/>
+
+  <linearGradient id="head-grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E9D5FF"/>
+    <stop offset="1" stop-color="#9333EA"/>
+  </linearGradient>
 
   <clipPath id="grid-area">
-    <rect x="23" y="41" width="748" height="104"/>
+    <rect x="21" y="39" width="752" height="108"/>
   </clipPath>
 
-  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="1.8" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
+  <filter id="snake-shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="1.2" stdDeviation="1.4" flood-color="#7C3AED" flood-opacity="0.55"/>
   </filter>
 </defs>
 
 <!-- CONTADOR -->
 <text x="28" y="20" class="label">
-  <tspan class="strong">1.138</tspan> contribuições no último ano
+  <tspan class="strong">1.139</tspan> contribuições no último ano
 </text>
 
 <!-- MESES -->
@@ -100,8 +101,8 @@
 <rect x="84" y="102" width="10" height="10" rx="2.5" class="level-1">
   <title>2025-12-25: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.52140;0.52540;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.52017;0.52417;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="84" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="84" y="130" width="10" height="10" rx="2.5" class="level-0"/>
@@ -171,8 +172,8 @@
 <rect x="210" y="130" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-02-28: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.78875;0.79275;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.78536;0.78936;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="224" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="224" y="60" width="10" height="10" rx="2.5" class="level-0"/>
@@ -182,8 +183,8 @@
 <rect x="224" y="102" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-03-05: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.54465;0.54865;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.54323;0.54723;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="224" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="224" y="130" width="10" height="10" rx="2.5" class="level-0"/>
@@ -195,8 +196,8 @@
 <rect x="238" y="102" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-03-12: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.54697;0.55097;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.54553;0.54953;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="238" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="238" y="130" width="10" height="10" rx="2.5" class="level-0"/>
@@ -209,8 +210,8 @@
 <rect x="252" y="116" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-03-20: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.71900;0.72300;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.71618;0.72018;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="252" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="266" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -220,8 +221,8 @@
 <rect x="266" y="88" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-03-25: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.47026;0.47426;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.46944;0.47344;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="266" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="266" y="116" width="10" height="10" rx="2.5" class="level-0"/>
@@ -281,8 +282,8 @@
 <rect x="378" y="74" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-05-19: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.32380;0.32780;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.32416;0.32816;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="378" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="378" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -293,15 +294,15 @@
 <rect x="392" y="60" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-05-25: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.20292;0.20692;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.20425;0.20825;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="392" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="392" y="74" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-05-26: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.32613;0.33013;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.32646;0.33046;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="392" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="392" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -332,15 +333,15 @@
 <rect x="448" y="46" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-06-21: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.08900;0.09300;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.09125;0.09525;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="448" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="448" y="60" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-06-22: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.19362;0.19762;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.19502;0.19902;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="448" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="448" y="88" width="10" height="10" rx="2.5" class="level-0"/>
@@ -368,22 +369,22 @@
 <rect x="490" y="88" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-07-15: 7 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.43306;0.43706;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.43254;0.43654;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="490" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="490" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-07-16: 14 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.58882;0.59282;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.58704;0.59104;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="490" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="490" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-07-17: 6 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.67948;0.68348;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.67698;0.68098;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="490" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="504" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -391,15 +392,15 @@
 <rect x="504" y="60" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-07-20: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.18432;0.18832;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.18580;0.18980;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="504" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="504" y="74" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-07-21: 4 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.34472;0.34872;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.34491;0.34891;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="504" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="504" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -407,8 +408,8 @@
 <rect x="504" y="116" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-07-24: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.67716;0.68116;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.67467;0.67867;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="504" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="518" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -418,65 +419,65 @@
 <rect x="518" y="88" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-07-29: 12 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.42841;0.43241;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.42793;0.43193;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="518" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="518" y="102" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-07-30: 30 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.59347;0.59747;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.59165;0.59565;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="518" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="518" y="116" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-07-31: 46 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.67483;0.67883;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.67236;0.67636;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="518" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="518" y="130" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-08-01: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.83989;0.84389;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.83609;0.84009;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="60" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-03: 31 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.17967;0.18367;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.18119;0.18519;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-08-04: 19 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.34937;0.35337;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.34952;0.35352;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="88" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-08-05: 6 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.42609;0.43009;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.42562;0.42962;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-08-06: 12 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.59579;0.59979;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.59396;0.59796;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="532" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-08-07: 5 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.67251;0.67651;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.67006;0.67406;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="532" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="546" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -484,36 +485,36 @@
 <rect x="546" y="60" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-10: 24 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.17734;0.18134;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.17888;0.18288;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="546" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="546" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-08-11: 14 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.35170;0.35570;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.35183;0.35583;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="546" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="546" y="88" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-12: 35 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.42376;0.42776;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.42332;0.42732;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="546" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="546" y="102" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-13: 59 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.59812;0.60212;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.59627;0.60027;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="546" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="546" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-08-14: 6 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.67018;0.67418;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.66775;0.67175;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="546" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="560" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -521,8 +522,8 @@
 <rect x="560" y="60" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-08-17: 5 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.17502;0.17902;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.17657;0.18057;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="560" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="560" y="88" width="10" height="10" rx="2.5" class="level-0"/>
@@ -530,64 +531,64 @@
 <rect x="560" y="102" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-20: 23 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.60044;0.60444;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.59857;0.60257;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="560" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="560" y="116" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-21: 42 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.66786;0.67186;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.66545;0.66945;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="560" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="560" y="130" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-22: 84 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.84686;0.85086;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.84301;0.84701;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="46" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-08-23: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.10993;0.11393;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.11201;0.11601;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="60" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-24: 43 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.17269;0.17669;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.17427;0.17827;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="74" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-25: 35 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.35635;0.36035;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.35644;0.36044;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="88" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-08-26: 72 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.41911;0.42311;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.41870;0.42270;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-08-27: 9 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.60277;0.60677;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.60088;0.60488;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="574" y="116" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-08-28: 17 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.66554;0.66954;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.66314;0.66714;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="574" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="588" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -596,51 +597,51 @@
 <rect x="588" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-01: 13 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.35867;0.36267;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.35875;0.36275;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="588" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="588" y="88" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-02: 9 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.41679;0.42079;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.41640;0.42040;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="588" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="588" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-03: 15 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.60509;0.60909;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.60318;0.60718;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="588" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="588" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-09-04: 5 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.66321;0.66721;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.66083;0.66483;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="588" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="588" y="130" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-09-05: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.85151;0.85551;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.84762;0.85162;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="602" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="602" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="602" y="60" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-07: 9 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.16804;0.17204;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.16966;0.17366;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="602" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="602" y="74" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-09-08: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.36100;0.36500;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.36105;0.36505;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="602" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="602" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -652,51 +653,51 @@
 <rect x="616" y="74" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-09-15: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.36332;0.36732;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.36336;0.36736;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="616" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="616" y="88" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-09-16: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.41214;0.41614;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.41179;0.41579;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="616" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="616" y="102" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-09-17: 7 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.60974;0.61374;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.60780;0.61180;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="616" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="616" y="116" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-09-18: 51 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.65856;0.66256;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.65622;0.66022;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="616" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="616" y="130" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-19: 20 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.85616;0.86016;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.85223;0.85623;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="630" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="630" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="630" y="60" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-09-21: 34 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.16339;0.16739;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.16504;0.16904;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="630" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="630" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-22: 20 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.36565;0.36965;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.36567;0.36967;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="630" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="630" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -704,8 +705,8 @@
 <rect x="630" y="116" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-09-25: 11 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.65624;0.66024;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.65392;0.65792;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="630" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="644" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -721,29 +722,29 @@
 <rect x="658" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-10-06: 15 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.37030;0.37430;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.37028;0.37428;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="658" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="658" y="88" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-10-07: 22 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.40517;0.40917;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.40487;0.40887;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="658" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="658" y="102" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-10-08: 28 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.61672;0.62072;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.61471;0.61871;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="658" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="658" y="116" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-10-09: 23 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.65159;0.65559;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.64930;0.65330;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="658" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="672" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -755,8 +756,8 @@
 <rect x="672" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-16: 7 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.64926;0.65326;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.64700;0.65100;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="672" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="686" y="46" width="10" height="10" rx="2.5" class="level-0"/>
@@ -765,59 +766,59 @@
 <rect x="686" y="74" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-20: 8 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.37494;0.37894;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.37489;0.37889;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="686" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="686" y="88" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-21: 5 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.40052;0.40452;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.40026;0.40426;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="686" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="686" y="102" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-10-22: 24 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.62137;0.62537;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.61933;0.62333;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="686" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="686" y="116" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-23: 8 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.64694;0.65094;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.64469;0.64869;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="686" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="686" y="130" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-24: 4 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.86779;0.87179;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.86376;0.86776;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="700" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="60" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="60" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-10-26: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.15177;0.15577;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.15351;0.15751;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="700" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="88" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-10-28: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.39819;0.40219;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.39795;0.40195;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="700" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="102" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-10-29: 5 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.62369;0.62769;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.62163;0.62563;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="700" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="700" y="130" width="10" height="10" rx="2.5" class="level-0"/>
@@ -827,8 +828,8 @@
 <rect x="714" y="74" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-11-03: 2 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.37959;0.38359;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.37950;0.38350;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="714" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="714" y="102" width="10" height="10" rx="2.5" class="level-0"/>
@@ -836,15 +837,15 @@
 <rect x="714" y="116" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-11-06: 3 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.64229;0.64629;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.64008;0.64408;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="714" y="130" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="714" y="130" width="10" height="10" rx="2.5" class="level-1">
   <title>2026-11-07: 1 contribuição</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.87244;0.87644;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.86837;0.87237;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="728" y="46" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="728" y="60" width="10" height="10" rx="2.5" class="level-0"/>
@@ -859,16 +860,16 @@
 <rect x="742" y="74" width="10" height="10" rx="2.5" class="level-2">
   <title>2026-11-17: 4 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.38424;0.38824;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.38411;0.38811;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="742" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="742" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="742" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-11-19: 11 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.63066;0.63466;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.62855;0.63255;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="742" y="116" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="742" y="130" width="10" height="10" rx="2.5" class="level-0"/>
@@ -877,376 +878,198 @@
 <rect x="756" y="60" width="10" height="10" rx="2.5" class="level-4">
   <title>2026-11-23: 33 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.14247;0.14647;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.14429;0.14829;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="756" y="74" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="756" y="74" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-11-24: 18 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.38657;0.39057;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.38642;0.39042;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="756" y="88" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="756" y="88" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-11-25: 10 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.38889;0.39289;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.38873;0.39273;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="756" y="102" width="10" height="10" rx="2.5" class="level-0"/>
 <rect x="756" y="102" width="10" height="10" rx="2.5" class="level-3">
   <title>2026-11-26: 12 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.63299;0.63699;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.63086;0.63486;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 <rect x="756" y="116" width="10" height="10" rx="2.5" class="level-0"/>
-<rect x="756" y="116" width="10" height="10" rx="2.5" class="level-1">
-  <title>2026-11-27: 3 contribuições</title>
+<rect x="756" y="116" width="10" height="10" rx="2.5" class="level-2">
+  <title>2026-11-27: 4 contribuições</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
-    keyTimes="0;0.63531;0.63931;0.965;1"
-    dur="24s" begin="-0.335s" repeatCount="indefinite"/>
+    keyTimes="0;0.63316;0.63716;0.965;1"
+    dur="24s" repeatCount="indefinite"/>
 </rect>
 </g>
 
 <!-- COBRA -->
 <g id="snake" clip-path="url(#grid-area)">
-  <g filter="url(#glow)">
-<circle r="2.00" fill="#0b7a5c">
-    <animateMotion
-      dur="24s"
-      begin="0.000s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.12" fill="#0c7e5f">
-    <animateMotion
-      dur="24s"
-      begin="-0.012s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.24" fill="#0e8261">
-    <animateMotion
-      dur="24s"
-      begin="-0.024s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.36" fill="#0f8664">
-    <animateMotion
-      dur="24s"
-      begin="-0.036s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.47" fill="#108a67">
-    <animateMotion
-      dur="24s"
-      begin="-0.048s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.59" fill="#118e6a">
-    <animateMotion
-      dur="24s"
-      begin="-0.060s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.71" fill="#13926c">
-    <animateMotion
-      dur="24s"
-      begin="-0.072s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.83" fill="#14966f">
-    <animateMotion
-      dur="24s"
-      begin="-0.084s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="2.95" fill="#159a72">
-    <animateMotion
-      dur="24s"
-      begin="-0.096s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.07" fill="#179e75">
-    <animateMotion
-      dur="24s"
-      begin="-0.108s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.19" fill="#18a277">
-    <animateMotion
-      dur="24s"
-      begin="-0.120s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.30" fill="#19a67a">
-    <animateMotion
-      dur="24s"
-      begin="-0.132s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.42" fill="#1baa7d">
-    <animateMotion
-      dur="24s"
-      begin="-0.143s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.54" fill="#1cae80">
-    <animateMotion
-      dur="24s"
-      begin="-0.155s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.66" fill="#1db282">
-    <animateMotion
-      dur="24s"
-      begin="-0.167s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.78" fill="#1eb685">
-    <animateMotion
-      dur="24s"
-      begin="-0.179s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="3.90" fill="#20ba88">
-    <animateMotion
-      dur="24s"
-      begin="-0.191s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.01" fill="#21be8b">
-    <animateMotion
-      dur="24s"
-      begin="-0.203s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.13" fill="#22c28d">
-    <animateMotion
-      dur="24s"
-      begin="-0.215s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.25" fill="#24c690">
-    <animateMotion
-      dur="24s"
-      begin="-0.227s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.37" fill="#25ca93">
-    <animateMotion
-      dur="24s"
-      begin="-0.239s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.49" fill="#26ce96">
-    <animateMotion
-      dur="24s"
-      begin="-0.251s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.61" fill="#28d298">
-    <animateMotion
-      dur="24s"
-      begin="-0.263s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.73" fill="#29d69b">
-    <animateMotion
-      dur="24s"
-      begin="-0.275s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.84" fill="#2ada9e">
-    <animateMotion
-      dur="24s"
-      begin="-0.287s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="4.96" fill="#2bdea1">
-    <animateMotion
-      dur="24s"
-      begin="-0.299s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="5.08" fill="#2de2a3">
-    <animateMotion
-      dur="24s"
-      begin="-0.311s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
-<circle r="5.20" fill="#2ee6a6">
-    <animateMotion
-      dur="24s"
-      begin="-0.323s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
-</circle>
+  <g filter="url(#snake-shadow)">
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#2e1065" stroke-width="2.40"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="112.00 10928"
+  stroke-dashoffset="112.00">
+    <animate attributeName="stroke-dashoffset"
+      values="112;-5352;-5352"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#3c187e" stroke-width="4.64"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="103.65 10928"
+  stroke-dashoffset="103.65">
+    <animate attributeName="stroke-dashoffset"
+      values="103.65090909090908;-5360.349090909091;-5360.349090909091"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#4a1f96" stroke-width="5.46"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="95.30 10928"
+  stroke-dashoffset="95.30">
+    <animate attributeName="stroke-dashoffset"
+      values="95.30181818181819;-5368.698181818182;-5368.698181818182"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#5927af" stroke-width="6.08"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="86.95 10928"
+  stroke-dashoffset="86.95">
+    <animate attributeName="stroke-dashoffset"
+      values="86.95272727272727;-5377.047272727273;-5377.047272727273"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#672fc8" stroke-width="6.59"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="78.60 10928"
+  stroke-dashoffset="78.60">
+    <animate attributeName="stroke-dashoffset"
+      values="78.60363636363637;-5385.396363636363;-5385.396363636363"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#7536e1" stroke-width="7.03"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="70.25 10928"
+  stroke-dashoffset="70.25">
+    <animate attributeName="stroke-dashoffset"
+      values="70.25454545454546;-5393.745454545455;-5393.745454545455"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#8241ee" stroke-width="7.42"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="61.91 10928"
+  stroke-dashoffset="61.91">
+    <animate attributeName="stroke-dashoffset"
+      values="61.905454545454546;-5402.094545454545;-5402.094545454545"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#8f4ef1" stroke-width="7.79"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="53.56 10928"
+  stroke-dashoffset="53.56">
+    <animate attributeName="stroke-dashoffset"
+      values="53.55636363636364;-5410.443636363636;-5410.443636363636"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#9b5cf4" stroke-width="8.12"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="45.21 10928"
+  stroke-dashoffset="45.21">
+    <animate attributeName="stroke-dashoffset"
+      values="45.20727272727273;-5418.7927272727275;-5418.7927272727275"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#a769f7" stroke-width="8.43"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="36.86 10928"
+  stroke-dashoffset="36.86">
+    <animate attributeName="stroke-dashoffset"
+      values="36.85818181818182;-5427.141818181818;-5427.141818181818"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#b477f9" stroke-width="8.72"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="28.51 10928"
+  stroke-dashoffset="28.51">
+    <animate attributeName="stroke-dashoffset"
+      values="28.50909090909092;-5435.490909090909;-5435.490909090909"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#c084fc" stroke-width="9.00"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="20.16 10928"
+  stroke-dashoffset="20.16">
+    <animate attributeName="stroke-dashoffset"
+      values="20.160000000000004;-5443.84;-5443.84"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
+<path d="M-109 51 L33 51 L47 51 L61 51 L75 51 L89 51 L103 51 L117 51 L131 51 L145 51 L159 51 L173 51 L187 51 L201 51 L215 51 L229 51 L243 51 L257 51 L271 51 L285 51 L299 51 L313 51 L327 51 L341 51 L355 51 L369 51 L383 51 L397 51 L411 51 L425 51 L439 51 L453 51 L467 51 L481 51 L495 51 L509 51 L523 51 L537 51 L551 51 L565 51 L579 51 L593 51 L607 51 L621 51 L635 51 L649 51 L663 51 L677 51 L691 51 L705 51 L719 51 L733 51 L747 51 L761 51 L761 65 L747 65 L733 65 L719 65 L705 65 L691 65 L677 65 L663 65 L649 65 L635 65 L621 65 L607 65 L593 65 L579 65 L565 65 L551 65 L537 65 L523 65 L509 65 L495 65 L481 65 L467 65 L453 65 L439 65 L425 65 L411 65 L397 65 L383 65 L369 65 L355 65 L341 65 L327 65 L313 65 L299 65 L285 65 L271 65 L257 65 L243 65 L229 65 L215 65 L201 65 L187 65 L173 65 L159 65 L145 65 L131 65 L117 65 L103 65 L89 65 L75 65 L61 65 L47 65 L33 65 L33 79 L47 79 L61 79 L75 79 L89 79 L103 79 L117 79 L131 79 L145 79 L159 79 L173 79 L187 79 L201 79 L215 79 L229 79 L243 79 L257 79 L271 79 L285 79 L299 79 L313 79 L327 79 L341 79 L355 79 L369 79 L383 79 L397 79 L411 79 L425 79 L439 79 L453 79 L467 79 L481 79 L495 79 L509 79 L523 79 L537 79 L551 79 L565 79 L579 79 L593 79 L607 79 L621 79 L635 79 L649 79 L663 79 L677 79 L691 79 L705 79 L719 79 L733 79 L747 79 L761 79 L761 93 L747 93 L733 93 L719 93 L705 93 L691 93 L677 93 L663 93 L649 93 L635 93 L621 93 L607 93 L593 93 L579 93 L565 93 L551 93 L537 93 L523 93 L509 93 L495 93 L481 93 L467 93 L453 93 L439 93 L425 93 L411 93 L397 93 L383 93 L369 93 L355 93 L341 93 L327 93 L313 93 L299 93 L285 93 L271 93 L257 93 L243 93 L229 93 L215 93 L201 93 L187 93 L173 93 L159 93 L145 93 L131 93 L117 93 L103 93 L89 93 L75 93 L61 93 L47 93 L33 93 L33 107 L47 107 L61 107 L75 107 L89 107 L103 107 L117 107 L131 107 L145 107 L159 107 L173 107 L187 107 L201 107 L215 107 L229 107 L243 107 L257 107 L271 107 L285 107 L299 107 L313 107 L327 107 L341 107 L355 107 L369 107 L383 107 L397 107 L411 107 L425 107 L439 107 L453 107 L467 107 L481 107 L495 107 L509 107 L523 107 L537 107 L551 107 L565 107 L579 107 L593 107 L607 107 L621 107 L635 107 L649 107 L663 107 L677 107 L691 107 L705 107 L719 107 L733 107 L747 107 L761 107 L761 121 L747 121 L733 121 L719 121 L705 121 L691 121 L677 121 L663 121 L649 121 L635 121 L621 121 L607 121 L593 121 L579 121 L565 121 L551 121 L537 121 L523 121 L509 121 L495 121 L481 121 L467 121 L453 121 L439 121 L425 121 L411 121 L397 121 L383 121 L369 121 L355 121 L341 121 L327 121 L313 121 L299 121 L285 121 L271 121 L257 121 L243 121 L229 121 L215 121 L201 121 L187 121 L173 121 L159 121 L145 121 L131 121 L117 121 L103 121 L89 121 L75 121 L61 121 L47 121 L33 121 L33 135 L47 135 L61 135 L75 135 L89 135 L103 135 L117 135 L131 135 L145 135 L159 135 L173 135 L187 135 L201 135 L215 135 L229 135 L243 135 L257 135 L271 135 L285 135 L299 135 L313 135 L327 135 L341 135 L355 135 L369 135 L383 135 L397 135 L411 135 L425 135 L439 135 L453 135 L467 135 L481 135 L495 135 L509 135 L523 135 L537 135 L551 135 L565 135 L579 135 L593 135 L607 135 L621 135 L635 135 L649 135 L663 135 L677 135 L691 135 L705 135 L719 135 L733 135 L747 135 L761 135 L903 135" fill="none"
+  stroke="#F5D0FE" stroke-width="2.4" stroke-linecap="round" opacity="0.8"
+  stroke-dasharray="0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 6.99 0.01 10928"
+  stroke-dashoffset="78.40">
+    <animate attributeName="stroke-dashoffset"
+      values="78.39999999999999;-5385.6;-5385.6"
+      keyTimes="0;0.9;1" calcMode="linear"
+      dur="24s" repeatCount="indefinite"/>
+</path>
 
 <g>
-  <ellipse cx="1" cy="0" rx="7.2" ry="6" fill="#2EE6A6"/>
-
-  <!-- Olhos -->
-  <circle cx="3" cy="-2.8" r="1.9" fill="#FFFFFF"/>
-  <circle cx="3.8" cy="-2.8" r="0.9" fill="#07130F"/>
-  <circle cx="3" cy="2.8" r="1.9" fill="#FFFFFF"/>
-  <circle cx="3.8" cy="2.8" r="0.9" fill="#07130F"/>
-
-  <!-- Língua -->
-  <path d="M7.5 0 H12.5 M12.5 0 L15 -2 M12.5 0 L15 2"
-        stroke="#FF4D78" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0">
+  <!-- Língua (atrás da cabeça) -->
+  <path d="M9 0 H14.5 M14.5 0 L17 -2.2 M14.5 0 L17 2.2"
+        stroke="#FB7185" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0"
              keyTimes="0;0.5;0.6;0.85;1" dur="1.1s" repeatCount="indefinite"/>
   </path>
-  
-    <animateMotion
-      dur="24s"
-      begin="-0.335s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;0.9;1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>
+
+  <!-- Cabeça -->
+  <path d="M-5 -4.6 C-1 -6.6 6 -6.2 9.6 -1.7 Q10.8 0 9.6 1.7 C6 6.2 -1 6.6 -5 4.6 Z"
+        fill="url(#head-grad)"/>
+
+  <!-- Olhos com pupila em fenda -->
+  <ellipse cx="3.2" cy="-3" rx="1.9" ry="1.6" fill="#FDE047"/>
+  <ellipse cx="3.5" cy="-3" rx="0.45" ry="1.25" fill="#1E0B36"/>
+  <ellipse cx="3.2" cy="3" rx="1.9" ry="1.6" fill="#FDE047"/>
+  <ellipse cx="3.5" cy="3" rx="0.45" ry="1.25" fill="#1E0B36"/>
+
+  <!-- Narinas -->
+  <circle cx="8.3" cy="-0.9" r="0.4" fill="#1E0B36" opacity="0.6"/>
+  <circle cx="8.3" cy="0.9" r="0.4" fill="#1E0B36" opacity="0.6"/>
+
+  <animateMotion dur="24s" repeatCount="indefinite" rotate="auto"
+    calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.9;1">
+    <mpath xlink:href="#snake-track"/>
+  </animateMotion>
 </g>
   </g>
 </g>
