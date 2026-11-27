@@ -22,18 +22,32 @@ const OFFSET_Y = 46;
 // Tempo
 const DURATION = 24;      // ciclo completo, em segundos
 const MOVE_SHARE = 0.9;   // fração do ciclo com a cobra andando (o resto é pausa)
-const FADE = 0.004;       // tempo que o quadrado leva para sumir (fração do ciclo)
+const FADE = 0.004;       // tempo que o quadrado leva para sumir
 const REFILL_AT = 0.965;  // momento em que os quadrados voltam
 
-// Cobra
-const SNAKE_HEAD = "#2EE6A6";
-const SNAKE_TAIL = "#0B7A5C";
-const TONGUE = "#FF4D78";
-const BODY_SEGMENTS = 28;
-const SEGMENT_SPACING = 3; // px entre segmentos (menor = corpo mais liso)
-const BODY_MAX_R = 5.2;
-const BODY_MIN_R = 2;
-const ENTRY = 120;         // px fora do gráfico para entrar e sair
+// Corpo da cobra
+const BODY = 112;         // comprimento em px (~8 quadrados)
+const BODY_MAX_W = 9;     // espessura perto da cabeça
+const BODY_MIN_W = 2.4;   // espessura na ponta do rabo
+const LAYERS = 12;        // camadas do degradê (mais = mais suave)
+const ENTRY = BODY + 30;  // px fora do gráfico para entrar e sair
+
+// Paleta roxa
+const SNAKE_TAIL = "#2E1065";
+const SNAKE_MID = "#7C3AED";
+const SNAKE_FRONT = "#C084FC";
+const HEAD_LIGHT = "#E9D5FF";
+const HEAD_DARK = "#9333EA";
+const SCALES = "#F5D0FE";
+const EYE = "#FDE047";
+const PUPIL = "#1E0B36";
+const TONGUE = "#FB7185";
+const GLOW = "#7C3AED";
+
+// Escamas (pintas no dorso)
+const DOT_SPACING = 7;
+const PATTERN_LEN = BODY * 0.7;
+const PATTERN_HEAD_GAP = 12;
 
 // Cores dos quadrados (claro / escuro, iguais às do GitHub)
 const LIGHT = ["#EBEDF0", "#9BE9A8", "#40C463", "#30A14E", "#216E39"];
@@ -55,6 +69,10 @@ function mix(a, b, t) {
     ca.map((v, i) => Math.round(v + (cb[i] - v) * t).toString(16).padStart(2, "0")).join("")
   );
 }
+
+// Degradê de 3 cores: cauda → meio → frente
+const snakeGradient = (t) =>
+  t < 0.5 ? mix(SNAKE_TAIL, SNAKE_MID, t * 2) : mix(SNAKE_MID, SNAKE_FRONT, (t - 0.5) * 2);
 
 const f5 = (n) => n.toFixed(5);
 
@@ -122,7 +140,7 @@ const WIDTH = OFFSET_X * 2 + GRID_W;
 const HEIGHT = OFFSET_Y + GRID_H + 38;
 
 /* =========================================================
-   ORGANIZA OS DIAS
+   ORGANIZA OS DIAS E NÍVEIS
 ========================================================= */
 
 const days = [];
@@ -138,10 +156,6 @@ weeks.forEach((week, weekIndex) => {
     });
   });
 });
-
-/* =========================================================
-   DEFINE NÍVEIS DOS QUADRADOS
-========================================================= */
 
 const positiveCounts = days
   .filter((day) => day.contributionCount > 0)
@@ -166,15 +180,7 @@ function contributionLevel(count) {
 }
 
 /* =========================================================
-   CAMINHO DA COBRA
-
-   Entra pela esquerda, percorre em serpente e sai:
-
-   ⟶ → → → → →
-               ↓
-     ← ← ← ← ←
-     ↓
-     → → → → → ⟶
+   CAMINHO DA COBRA (entra, percorre em serpente e sai)
 ========================================================= */
 
 const center = (column, row) => ({
@@ -204,30 +210,24 @@ const trackPoints = [
 const pathD = trackPoints.map((p, i) => `${i ? "L" : "M"}${p.x} ${p.y}`).join(" ");
 
 const PATH_LENGTH = ENTRY * 2 + (gridPoints.length - 1) * STEP;
-const SPEED = PATH_LENGTH / (DURATION * MOVE_SHARE); // px por segundo
-const SEGMENT_DELAY = SEGMENT_SPACING / SPEED;
-const LEAD = BODY_SEGMENTS * SEGMENT_DELAY;           // todos já começam em movimento
+const BIG_GAP = PATH_LENGTH * 2;
 
 function pathIndex(column, row) {
   return row % 2 === 0 ? row * COLS + column : row * COLS + (COLS - 1 - column);
 }
 
-// Momento (fração do ciclo) em que a cabeça chega no quadrado
+// Momento (fração do ciclo) em que a boca da cobra chega no quadrado
 function eatTime(column, row) {
-  const distance = ENTRY + pathIndex(column, row) * STEP - 4;
+  const distance = ENTRY + pathIndex(column, row) * STEP - 8;
   return (distance / PATH_LENGTH) * MOVE_SHARE;
 }
 
-const motion = (begin) => `
-    <animateMotion
-      dur="${DURATION}s"
-      begin="${begin.toFixed(3)}s"
-      repeatCount="indefinite"
-      rotate="auto"
-      calcMode="linear"
-      keyPoints="0;1;1"
-      keyTimes="0;${MOVE_SHARE};1"
-    ><mpath xlink:href="#snake-track"/></animateMotion>`;
+// Faz um traço "deslizar" pelo caminho, sincronizado com a cabeça
+const slide = (start) => `
+    <animate attributeName="stroke-dashoffset"
+      values="${start};${start - PATH_LENGTH};${start - PATH_LENGTH}"
+      keyTimes="0;${MOVE_SHARE};1" calcMode="linear"
+      dur="${DURATION}s" repeatCount="indefinite"/>`;
 
 /* =========================================================
    QUADRADOS
@@ -250,25 +250,46 @@ const cellsSvg = days
   <title>${day.date}: ${day.contributionCount} ${label}</title>
   <animate attributeName="opacity" values="1;1;0;0;1"
     keyTimes="0;${f5(eat)};${f5(gone)};${REFILL_AT};1"
-    dur="${DURATION}s" begin="${(-LEAD).toFixed(3)}s" repeatCount="indefinite"/>
+    dur="${DURATION}s" repeatCount="indefinite"/>
 </rect>`;
   })
   .join("\n");
 
 /* =========================================================
-   CORPO (cauda desenhada primeiro, cabeça por cima)
+   CORPO
+
+   Camadas sobrepostas: a primeira cobre o corpo todo (fina e
+   escura), as seguintes cobrem só a parte da frente, cada vez
+   mais grossas e claras. As pontas arredondadas fundem tudo
+   num corpo contínuo que afina até o rabo.
 ========================================================= */
 
-const bodySvg = Array.from({ length: BODY_SEGMENTS }, (_, i) => {
-  const k = BODY_SEGMENTS - i;
-  const t = (k - 1) / (BODY_SEGMENTS - 1);
-  const r = BODY_MAX_R - t * (BODY_MAX_R - BODY_MIN_R);
+const bodySvg = Array.from({ length: LAYERS }, (_, j) => {
+  const t = j / (LAYERS - 1);
+  const length = BODY * (1 - 0.82 * t);
+  const width = BODY_MIN_W + (BODY_MAX_W - BODY_MIN_W) * Math.pow(t, 0.45);
 
-  return `<circle r="${r.toFixed(2)}" fill="${mix(SNAKE_HEAD, SNAKE_TAIL, t)}">${motion(
-    -LEAD + k * SEGMENT_DELAY
-  )}
-</circle>`;
+  return `<path d="${pathD}" fill="none"
+  stroke="${snakeGradient(t)}" stroke-width="${width.toFixed(2)}"
+  stroke-linecap="round" stroke-linejoin="round"
+  stroke-dasharray="${length.toFixed(2)} ${BIG_GAP}"
+  stroke-dashoffset="${length.toFixed(2)}">${slide(length)}
+</path>`;
 }).join("\n");
+
+/* =========================================================
+   ESCAMAS (pintas claras no dorso)
+========================================================= */
+
+const dotsCount = Math.floor((PATTERN_LEN - PATTERN_HEAD_GAP) / DOT_SPACING);
+const dotsDash =
+  Array(dotsCount).fill(`0.01 ${DOT_SPACING - 0.01}`).join(" ") + ` 0.01 ${BIG_GAP}`;
+
+const scalesSvg = `<path d="${pathD}" fill="none"
+  stroke="${SCALES}" stroke-width="2.4" stroke-linecap="round" opacity="0.8"
+  stroke-dasharray="${dotsDash}"
+  stroke-dashoffset="${PATTERN_LEN.toFixed(2)}">${slide(PATTERN_LEN)}
+</path>`;
 
 /* =========================================================
    CABEÇA
@@ -276,21 +297,31 @@ const bodySvg = Array.from({ length: BODY_SEGMENTS }, (_, i) => {
 
 const headSvg = `
 <g>
-  <ellipse cx="1" cy="0" rx="7.2" ry="6" fill="${SNAKE_HEAD}"/>
-
-  <!-- Olhos -->
-  <circle cx="3" cy="-2.8" r="1.9" fill="#FFFFFF"/>
-  <circle cx="3.8" cy="-2.8" r="0.9" fill="#07130F"/>
-  <circle cx="3" cy="2.8" r="1.9" fill="#FFFFFF"/>
-  <circle cx="3.8" cy="2.8" r="0.9" fill="#07130F"/>
-
-  <!-- Língua -->
-  <path d="M7.5 0 H12.5 M12.5 0 L15 -2 M12.5 0 L15 2"
-        stroke="${TONGUE}" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0">
+  <!-- Língua (atrás da cabeça) -->
+  <path d="M9 0 H14.5 M14.5 0 L17 -2.2 M14.5 0 L17 2.2"
+        stroke="${TONGUE}" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0"
              keyTimes="0;0.5;0.6;0.85;1" dur="1.1s" repeatCount="indefinite"/>
   </path>
-  ${motion(-LEAD)}
+
+  <!-- Cabeça -->
+  <path d="M-5 -4.6 C-1 -6.6 6 -6.2 9.6 -1.7 Q10.8 0 9.6 1.7 C6 6.2 -1 6.6 -5 4.6 Z"
+        fill="url(#head-grad)"/>
+
+  <!-- Olhos com pupila em fenda -->
+  <ellipse cx="3.2" cy="-3" rx="1.9" ry="1.6" fill="${EYE}"/>
+  <ellipse cx="3.5" cy="-3" rx="0.45" ry="1.25" fill="${PUPIL}"/>
+  <ellipse cx="3.2" cy="3" rx="1.9" ry="1.6" fill="${EYE}"/>
+  <ellipse cx="3.5" cy="3" rx="0.45" ry="1.25" fill="${PUPIL}"/>
+
+  <!-- Narinas -->
+  <circle cx="8.3" cy="-0.9" r="0.4" fill="${PUPIL}" opacity="0.6"/>
+  <circle cx="8.3" cy="0.9" r="0.4" fill="${PUPIL}" opacity="0.6"/>
+
+  <animateMotion dur="${DURATION}s" repeatCount="indefinite" rotate="auto"
+    calcMode="linear" keyPoints="0;1;1" keyTimes="0;${MOVE_SHARE};1">
+    <mpath xlink:href="#snake-track"/>
+  </animateMotion>
 </g>`;
 
 /* =========================================================
@@ -360,16 +391,17 @@ const svg = `
 <defs>
   <path id="snake-track" d="${pathD}" fill="none"/>
 
+  <linearGradient id="head-grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="${HEAD_LIGHT}"/>
+    <stop offset="1" stop-color="${HEAD_DARK}"/>
+  </linearGradient>
+
   <clipPath id="grid-area">
-    <rect x="${OFFSET_X - 5}" y="${OFFSET_Y - 5}" width="${GRID_W + 10}" height="${GRID_H + 10}"/>
+    <rect x="${OFFSET_X - 7}" y="${OFFSET_Y - 7}" width="${GRID_W + 14}" height="${GRID_H + 14}"/>
   </clipPath>
 
-  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="1.8" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
+  <filter id="snake-shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="1.2" stdDeviation="1.4" flood-color="${GLOW}" flood-opacity="0.55"/>
   </filter>
 </defs>
 
@@ -388,8 +420,9 @@ ${cellsSvg}
 
 <!-- COBRA -->
 <g id="snake" clip-path="url(#grid-area)">
-  <g filter="url(#glow)">
+  <g filter="url(#snake-shadow)">
 ${bodySvg}
+${scalesSvg}
 ${headSvg}
   </g>
 </g>
